@@ -5,7 +5,7 @@ import re
 
 DIRNAME = './scripts'
 
-file_name_valid = re.compile('^\d{5}.*\.sql')
+file_name_valid = re.compile('^\d{5}.*')
 
 only_files = [f for f in listdir(DIRNAME) if isfile(join(DIRNAME, f))]
 
