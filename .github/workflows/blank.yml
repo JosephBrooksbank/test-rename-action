@@ -21,7 +21,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: setup python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with: 
           python-version: 3.8
       - name: execute python script
@@ -31,5 +31,6 @@ jobs:
         run: |
           git config --local user.email = "action@github.com"
           git config --local user.name = "Github Action"
+          git status
           git commit -m "Rename script files" -a
           git push
