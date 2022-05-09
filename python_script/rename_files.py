@@ -17,7 +17,11 @@ success_numbers = [int(f[0:5]) for f in success_files]
 print(only_files)
 print(success_files)
 print(fail_files)
-next_number = max(success_numbers) + 1
+
+if not success_files:
+    next_number = 1
+else:
+    next_number = max(success_numbers) + 1
 
 for f in fail_files:
     number_string = f"{next_number:05d}c-"
