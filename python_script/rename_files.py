@@ -29,4 +29,3 @@ for f in fail_files:
 print(only_files)
 print(success_files)
 print(fail_files)
-print(f"{max(success_numbers):05d}")
