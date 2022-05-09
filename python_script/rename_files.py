@@ -3,7 +3,7 @@ from os import listdir
 from os.path import isfile, join
 import re
 
-DIRNAME = '../scripts'
+DIRNAME = './scripts'
 
 file_name_valid = re.compile('^\d{5}.*\.sql')
 
