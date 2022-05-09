@@ -25,7 +25,6 @@ else:
 
 for f in fail_files:
     number_string = f"{next_number:05d}c-"
+    print(number_string)
+    print(join(DIRNAME, number_string+f))
     os.rename(join(DIRNAME, f), join(DIRNAME, number_string+f))
-print(only_files)
-print(success_files)
-print(fail_files)
